@@ -1,0 +1,12 @@
+{
+  "defaults": { "timeoutMs": 8000, "warnMs": 1500, "expectStatus": [200, 399] },
+  "urls": [
+    { "url": "https://example.com", "name": "example.com" },
+    { "url": "https://www.wikipedia.org", "name": "wikipedia" },
+    { "url": "https://github.com", "name": "github" },
+    { "url": "https://www.cloudflare.com", "name": "cloudflare" },
+    { "url": "https://httpbin.org/delay/2", "name": "httpbin slow (2s)" },
+    { "url": "https://httpbin.org/status/404", "name": "httpbin 404 (broken)" },
+    { "url": "https://this-host-does-not-exist.invalid/", "name": "invalid host (broken)" }
+  ]
+}

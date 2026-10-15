@@ -1,0 +1,36 @@
+▶ classify
+  ✔ passes an expected status within warnMs (0.552584ms)
+  ✔ treats latency exactly at warnMs as pass (threshold is exclusive) (0.063958ms)
+  ✔ warns on an expected status that is slow (0.087541ms)
+  ✔ fails on a status outside the expected range, even if fast (0.058333ms)
+  ✔ honours a custom expected status (0.055042ms)
+  ✔ fails on timeout and on network errors (0.052417ms)
+✔ classify (1.674125ms)
+▶ checkAll (with a fake fetch)
+  ✔ probes every target and classifies the result (11.331084ms)
+  ✔ maps an abort-timeout to a timeout failure (51.839542ms)
+✔ checkAll (with a fake fetch) (63.391583ms)
+▶ parseConfig
+  ✔ accepts bare URL strings and applies built-in defaults (1.033208ms)
+  ✔ lets file-level defaults override built-ins (0.188542ms)
+  ✔ lets per-entry fields override file-level defaults (0.626667ms)
+  ✔ rejects invalid JSON (0.16325ms)
+  ✔ rejects a missing or empty urls array (0.072709ms)
+  ✔ rejects malformed and non-http URLs with the entry index (0.110291ms)
+  ✔ rejects non-positive timeouts (0.070084ms)
+  ✔ rejects warnMs >= timeoutMs, including in defaults (0.084292ms)
+  ✔ rejects duplicate names (0.086333ms)
+✔ parseConfig (3.700917ms)
+▶ parseStatus
+  ✔ parses a single code, a range and an Nxx class (0.114541ms)
+  ✔ rejects out-of-range codes and reversed ranges (0.077959ms)
+✔ parseStatus (0.261292ms)
+ℹ tests 19
+ℹ suites 4
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 160.798875
+exit=0

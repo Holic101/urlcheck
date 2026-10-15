@@ -1,0 +1,18 @@
+{
+  "name": "urlcheck",
+  "version": "1.0.0",
+  "description": "Check a list of URLs and report status code, latency and pass/warn/fail.",
+  "type": "module",
+  "bin": { "urlcheck": "src/cli.ts" },
+  "engines": { "node": ">=23.6" },
+  "scripts": {
+    "start": "node src/cli.ts",
+    "demo": "node src/cli.ts --config urls.json",
+    "test": "node --test test/",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

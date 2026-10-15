@@ -1,0 +1,11 @@
+RESULT  CODE   LATENCY  NAME                   DETAIL
+PASS     200    252 ms  example.com            ok
+PASS     200    157 ms  wikipedia              ok
+PASS     200    168 ms  github                 ok
+PASS     200    167 ms  cloudflare             ok
+WARN     200   2992 ms  httpbin slow (2s)      slow: over 1500 ms
+FAIL     404    779 ms  httpbin 404 (broken)   status 404, expected 200-399
+FAIL     ---    151 ms  invalid host (broken)  DNS lookup failed
+
+7 checked: 4 pass, 1 warn, 2 fail
+exit=1
